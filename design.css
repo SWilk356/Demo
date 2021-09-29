@@ -1,0 +1,118 @@
+body {
+    background-color:rgb(136, 179, 62) !important;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 4vw;
+}
+
+.container {
+    text-align: center;
+}
+
+.container p {
+    padding-top: 1vw;
+}
+
+ol {
+    font-size: 14pt;
+    text-align: left !important;
+    list-style-type: upper-roman;
+    background: rgb(163, 163, 55);
+    padding: 1vw;
+}
+
+#mapBox {
+    padding-top: 1vw;
+    padding-left: 1vw;
+    background:olive;
+}
+
+strong {
+    font-size: 16pt;
+}
+
+div img {
+    /*grabbed this idea from https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
+    box-shadow: 3px 3px white, -1em 0 .4em goldenrod;
+}
+
+#gooMap {
+    border: goldenrod;
+    border-width: 2vw;
+    border-style: double;
+    height:75% !important;
+    width:75%;
+    margin: 2vw;
+    background:olive;
+}
+
+#map {
+    border:goldenrod;
+    border-style:groove;
+    height:75%;
+    width: 75%;
+    margin-top: 2vw;
+}
+
+#plan {
+    margin: 2vw;
+}
+
+table {
+    border: goldenrod;
+    border-width: 2vw;
+    border-style: double;
+    background: olive;
+}
+
+.andmore {
+    margin:2vw;
+}
+
+input[type=text] {
+    width: 100%;
+    border: 3px solid goldenrod;
+    background-color: olive;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+/*pulled from https://www.w3schools.com/css/css_form.asp */
+input[type=text]:focus {
+    border: 3px solid white;
+}
+
+input[type=submit] {
+    border: 3px solid goldenrod;
+    background-color: olive;
+}
+
+/* nav bar styling  from https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
+.topnav {
+    background-color:goldenrod;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: -1vw;
+  }
+
+  .topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color:gold;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color:white;
+    color: black;
+  }
+

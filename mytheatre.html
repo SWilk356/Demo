@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- learned meta tag syntax from this site: https://www.w3schools.com/tags/tag_meta.asp -->
+        <meta name="author" content="Sarah Wilkinson">
+        <meta name="description" content="A Beginner's Guide to Ba Sing Se">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Ba Sing Se</title>
+
+        <link rel = "stylesheet" type = "text/css" href = "prettyCity.css"><!-- CSS only -->
+       <!--linked from https://getbootstrap.com/ via jsdeliver-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    </head>
+    <body>
+        <!--information about Ba Sing Se came from its fandom wiki page: https://avatar.fandom.com/wiki/Ba_Sing_Se -->
+
+        <div id="list" class="overview">
+            <nav>
+                <!--grabbed header bar syntax from https://www.w3schools.com/howto/howto_js_topnav.asp -->
+                <div class="topnav">
+                    <a class="active" href="index.html">A Guide to Ba Sing Se</a>
+                    <a href="#markerforlayout">City Layout</a>
+                    <a href="#markerforplaces">Places to go</a>
+                    <a href="#learn">Learn more</a>
+                  </div>                    
+            </nav>
+        </div>
+
+        <section id="intro" class="overview">
+            <div class="container">
+                
+            </div>
+
+        </section>
+
+        <section id="layout" class="structure">
+            <hr>
+            <hgroup>
+                <h2>City Layout</h2>
+            </hgroup>
+
+            <div id="components" class="structure">
+                <p>
+                    The first thing to know about Ba Sing Se is the city's layout. The city is surrounded by sections of the city in the following
+                    order, from the outermost section to the innermost:
+                </p>
+                <div class="container">
+                    <div id="mapBox">
+                        <div class="row">
+                            <div class="col-sm">
+                                <ol id="citySections">
+                                    <li><strong>Outer Wall: </strong>The outermost line of defense for Ba Sing Se. It encircles the entire city, including the Agrarian Zone.</li>
+                                    <li><strong>Agrarian Zone: </strong>This penultimate section provides for the entire city, making Ba Sing Se completely self-sufficient!</li>
+                                    <li><strong>Inner Wall: </strong>This wall encircles the residential districts of the city, providing its residents an extra line of defense.</li>
+                                    <li><strong>Lower Ring: </strong>This section is comprised of the city's poorest residents. Lower Ring residents must have a passport to enter the Upper Ring.</li>
+                                    <li><strong>Middle Ring: </strong>This section is comprised of the city's middle class. Middle Ring residents may travel wherever they like in the city without a need for a passport.</li>
+                                    <li><strong>Upper Ring: </strong>This section is comprised of the city's richest residents. Upper Ring residents are upper-class citizens, often having ties to the government. They also do not need a passport to travel anywhere in the city.</li>
+                                </ol>
+                            </div>
+                            <div class="col-sm">
+                                <!-- map of ba sing se image source: https://inkarnate.com/m/P5ggZj--avatar-legends-ba-sing-se/ -->
+                                <img id= "map" src="map.jfif" alt="Map of Ba Sing Se" width="700" height="650">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- used the embed method provided by google maps -->
+                    <iframe id="gooMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64668570.00485628!2d93.498113280333!3d8.396126258491362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9998ea3aac03b%3A0x5a97eb061cec1ac4!2sBa%20Sing%20Se!5e0!3m2!1sen!2sus!4v1631748115514!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+
+                </div>                  
+
+            </div>
+        </section>
+
+        <section id="places" class="locs">
+            <br id="markerforplaces">
+            <hr>
+            <hgroup>
+                <h2>Places to go</h2>
+            </hgroup>
+
+            <div id="photos" class="locs">
+                <p>
+                    To make the most of your stay, you'll want to know some notable places of interest. Ba Sing Se is full of amazing places to visit, so here are 
+                    just a few of them!
+                </p>
+                <!--pulled bootstrap grid syntax from this site: https://getbootstrap.com/docs/4.0/layout/grid/ -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <figure>
+                                <!-- jasmine dragon tea house image source: https://avatar.fandom.com/wiki/Jasmine_Dragon -->
+                                <img src="tea.png" alt="Front view of the Jasmine Dragon">
+                                <figcaption>
+                                    <p>
+                                        The tea house of General Iroh, Uncle to Firelord Zuko! His tea is widely and unequivocally known as the best in the city, so you cannot
+                                        miss an opportunity to try his handcrafted teas. Head to the Upper Ring to get his taste of heaven!
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm">
+                            <figure>
+                                <!-- ba sing se university image source: https://atla-lore-archive.tumblr.com/post/170700657610/location-ba-sing-se-university-the-greatest -->
+                                <img src="uni.jpg" alt="Image of Ba Sing Se University">
+                                <figcaption>
+                                    <p>
+                                        Ba Sing Se University is where the brightest of the Earth Kingdom's scholars study! Located in the Middle Ring, it offers a wide variety of degrees and 
+                                        is open to foreign exchange students! Come see the best university of all the kingdoms!
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <figure>
+                                <!-- earth kingdom palace image source: https://staycuriousemily.wordpress.com/2012/05/19/forbidden-city-vs-earth-kingdom-royal-palace/ -->
+                                <img src="palace.png" alt="Front View of the Earth Kingdom Palace">
+                                <figcaption>
+                                    <p>
+                                        The Earth Kingdom palace is home to Ba Sing Se's royalty and is a grand sight to see! Located in the heart of the city in the Upper Ring, feast your eyes on
+                                        the palace's exquisite architecture and witness the royal officials at work!
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm">
+                            <figure>
+                                <!-- firelight fountain image source: https://www.pinterest.com/pin/29625310021090713/ -->
+                                <img src="fountain.png" alt="The Firelight Fountain at night">
+                                <figcaption>
+                                    <p>
+                                        This hidden gem is not a sight to miss. Many people will not travel to the Lower Ring because of its poor reputation, but the Firelight Fountain is
+                                        a rare kind of beauty not found in the higher rings. Go at night to see the fountain in full effect!
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>   
+                </div>  
+
+            </div>
+
+
+            <div id="plan" class="locs">
+                <hgroup>
+                    <h3>Planning the Places</h3>
+                </hgroup>
+                <p>
+                    You will want to plan your trip carefully so as to catch each of the places at their best times. For your convenience, here is a 
+                    table of each of the places listed above and the best times to go!
+                </p>
+                <table>
+                    <tr>
+                        <th>Place</th>
+                        <th>Time</th>
+                        <th>Why</th>
+                    </tr>
+                    <tr>
+                        <td>Jasmine Dragon</td>
+                        <td>8:30am</td>
+                        <td>This is just before the late morning rush, so you won't have any problem getting a fresh cup of tea before your day of adventuring!</td>
+                    </tr>
+                    <tr>
+                        <td>Ba Sing Se University</td>
+                        <td>12:00-3:00pm</td>
+                        <td>The university is alive with students at this time, so you'll get to see what everyday life is like while viewing the university's gorgeous buildings!</td>
+                    </tr>
+                    <tr>
+                        <td>Ba Sing Se Palace</td>
+                        <td>10:00am-5:00pm</td>
+                        <td>Any time during the day is a good time to the palace! Just don't go at night, or the guards might think you are a suspicious person!</td>
+                    </tr>
+                    <tr>
+                        <td>Firelight Fountain</td>
+                        <td>9:00pm-1:00am</td>
+                        <td>The fountain is most beautiful at night when the glow of the lights can best be seen. Always be careful at night, though!</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </body>
+</html>
