@@ -53,15 +53,14 @@ body {
     position: relative;
     top: 43vw;
     text-align: center;
+    margin-bottom: 5vw;
 }
 
 #photos {
     margin: 2vw;
 }
 
-div img {
-    /*grabbed this idea from https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow 
-    box-shadow: 3px 3px white, -1em 0 .4em goldenrod;*/
+.waters img {
     height: 20vw;
     width: 20vw;
     border-radius: 25px;
@@ -81,7 +80,23 @@ div img {
     top: 67vw;
 }
 
+#copyright {
+    position: relative;
+    top: 40vw;
+}
 
+#copyright hr {
+    margin-top: 3vw;
+}
+
+#wider {
+    width:4vw;
+}
+
+.icons img {
+    height: 20px;
+    width: 20px;
+}
 
 
 #plan {
@@ -116,7 +131,7 @@ table {
     font-size: 17px;
   }
 
-  .topnav a:hover {
+  .topnav a:hover, .dropdown:hover .dropbtn {
     background-color: #fafafa;
     color: black !important;
   }
@@ -129,4 +144,3 @@ table {
     background-repeat: no-repeat;
     color: transparent;
   }
-
