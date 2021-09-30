@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
-    background-color:rgb(136, 179, 62) !important;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    padding-top: 4vw;
+    background-color: #fafafa !important;
+    padding-top: 3vw;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .container {
@@ -13,46 +14,75 @@ body {
     padding-top: 1vw;
 }
 
-ol {
-    font-size: 14pt;
-    text-align: left !important;
-    list-style-type: upper-roman;
-    background: rgb(163, 163, 55);
-    padding: 1vw;
+#backg_opener {
+    background-image: url("backg_rain.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center;
+    height: 44vw;
+    color: #fafafa;
+    text-align: center;
+    padding-top: 25vw;
+    z-index:-1;
 }
 
-#mapBox {
-    padding-top: 1vw;
-    padding-left: 1vw;
-    background:olive;
+#backg_opener hgroup {
+    position: absolute;
+    top: 7vw;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    padding-top: 2vw; 
+    height: 15vw;
+    margin-top: 5vw;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    background-color: rgba(41, 47, 49, 0.6) !important;
+    border-style: ridge;
 }
 
-strong {
-    font-size: 16pt;
+#mainTitle {
+    font-size: 500% !important;
+}
+
+#moreWater {
+    position: relative;
+    top: 43vw;
+    text-align: center;
+}
+
+#photos {
+    margin: 2vw;
 }
 
 div img {
-    /*grabbed this idea from https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
-    box-shadow: 3px 3px white, -1em 0 .4em goldenrod;
+    /*grabbed this idea from https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow 
+    box-shadow: 3px 3px white, -1em 0 .4em goldenrod;*/
+    height: 20vw;
+    width: 20vw;
+    border-radius: 25px;
+    border-style: solid;
+    margin-top: 1vw;
 }
 
-#gooMap {
-    border: goldenrod;
-    border-width: 2vw;
-    border-style: double;
-    height:75% !important;
-    width:75%;
-    margin: 2vw;
-    background:olive;
+.chooseImg:hover {
+    border-style: solid;
+    border-radius: 25px;
+    border-color: gray;
 }
 
-#map {
-    border:goldenrod;
-    border-style:groove;
-    height:75%;
-    width: 75%;
-    margin-top: 2vw;
+#music {
+    text-align: center;
+    position: relative;
+    top: 67vw;
 }
+
+
+
 
 #plan {
     margin: 2vw;
@@ -65,36 +95,16 @@ table {
     background: olive;
 }
 
-.andmore {
-    margin:2vw;
-}
-
-input[type=text] {
-    width: 100%;
-    border: 3px solid goldenrod;
-    background-color: olive;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-}
-
-/*pulled from https://www.w3schools.com/css/css_form.asp */
-input[type=text]:focus {
-    border: 3px solid white;
-}
-
-input[type=submit] {
-    border: 3px solid goldenrod;
-    background-color: olive;
-}
 
 /* nav bar styling  from https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
 .topnav {
-    background-color:goldenrod;
+    background-color: #000000;
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
-    margin-left: -1vw;
+    height: 4vw;
+    transition: top 0.5s;
   }
 
   .topnav a {
@@ -107,12 +117,16 @@ input[type=submit] {
   }
 
   .topnav a:hover {
-    background-color:gold;
-    color: black;
+    background-color: #fafafa;
+    color: black !important;
   }
 
   .topnav a.active {
-    background-color:white;
-    color: black;
+    background-image: url(droplet.jpg);
+    background-size: 7vw 7vw;
+    top: 1vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
   }
 
