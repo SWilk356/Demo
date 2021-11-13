@@ -10,16 +10,12 @@ body {
 }
 
 .overview hgroup {
-    position: absolute;
-    top: 7vw;
-    left: 0;
-    bottom: 0;
-    right: 0; 
-    padding-top: 2vw; 
-    height: 15vw;
-    margin-top: 5vw;
+    position: relative;
+    margin-top: -12vw;
     margin-left: 30vw;
     margin-right: 30vw;
+    padding-top: 2vw; 
+    height: 15vw;
     background-color: rgba(41, 47, 49, 0.6) !important;
     border-style: ridge;
 }
@@ -142,18 +138,28 @@ body {
     color: white;
   }
 
+#btnClock {
+    margin-bottom: 0.5vw;
+}
+
+#infoTimeLeft{
+    border-left-style:solid;
+    border-width: 1vw;
+    margin-top: -1vw;
+    margin-bottom: -1vw;
+}
+
 #timeLeft {
     background-image: url("earth.jpg.crdownload");
     background-size: cover;
-    background-position: center;
-    height: 22vw;
-    width: 50vw;
-    padding: 1vw;
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
     margin-top:-1vw;
     margin-bottom:-1vw;
-    margin-right: -7.5vw;
     border-left-style:solid;
-    border-width: 10px;
+    border-right-style:solid;
+    border-width: 1vw;
 }
 
 /* copyright section */
@@ -213,3 +219,15 @@ body {
     text-align: center;
     margin: 14px 16px;
   }
+
+  @media (max-width: 992px) {                  
+    .overview hgroup {
+       font-size:50%;
+    }
+ }
+
+ @media (max-width: 480px) {                  
+    .topnav {
+       display: none;
+    }
+ }
