@@ -229,5 +229,6 @@ body {
  @media (max-width: 480px) {                  
     .topnav {
        display: none;
+       font-size:20%;
     }
  }
